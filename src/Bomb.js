@@ -3,10 +3,10 @@ import ImageSlider from './ImageSlider.js';
 
 export default class Bomb extends Component{
 
-    constructor([props]) {
+    constructor(props) {
         super (props)
         this.state = {
-            secondsLeft: this.props.initialCount
+            secondsLeft: props.initialCount
         }
 
     }
@@ -14,8 +14,8 @@ export default class Bomb extends Component{
 
     render(){
         return (
-            <div className="time">
-            {this.state.secondsLeft === 0 ? "Boom!" : `${this.state.secondsLeft} seconds left before I go boom!}`
+            <div>
+            {this.state.secondsLeft === 0 ? "Boom!" : `${this.state.secondsLeft} seconds left before I go boom!`}
             </div>
         )
     }
