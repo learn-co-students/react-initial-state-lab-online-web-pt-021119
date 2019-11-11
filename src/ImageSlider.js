@@ -4,19 +4,20 @@ import Bomb from './Bomb.js';
 export default class ImageSlider extends Component{
 
 
-    // constructor(){
-    //     super()
-    //     this.state = {
-    //         currentSlideIndex: 0
-    //     }
-    // }
+    constructor(){
+        super()
+        this.state = {
+            currentSlideIndex: 0
+        }
+    }
 
-    // render(){
-    //     return (
-    //         // <div 
-    //         // I am on a slide {this.state.currentSlideIndex}>
-    //         // </div>
-    //     )
-    // }
+    render(){
+        return (
+            <div 
+            I am on slide> 
+            {this.state.currentSlideIndex}
+            </div>
+        )
+    }
 
 }
